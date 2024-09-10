@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>React Samples</title>
+</head>
+
+<body>
+    <!-- Target container -->
+    <div id="root"></div>
+    <h1>Baked Salmon</h1>
+    <section id="ingredients">
+        <ul class="ingredients">
+            <li>Salmon</li>
+            <li>Butter</li>
+            <li>Garlic</li>
+            <li>Pepper</li>
+            <li>Onion</li>
+        </ul>
+    </section>
+    <section id="instructions">
+        <h1>Instructions</h1>
+        <ul class="instructions">
+            <li>Preheat the oven to 350 degrees.</li>
+            <li>Spread butter on the salmon.</li>
+            <li>Season with garlic, pepper, and onion.</li>
+            <li>Bake for 15 minutes.</li>
+        </ul>
+    </section>
+    <!-- React library & ReactDOM (Development Version)-->
+    <script src="https://unpkg.com/react@16.8.6/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.8.6/umd/react-dom.development.js"></script>
+    <script>
+        const dish = React.createElement('h1', {id: ingredients}, 'Baked Salmon');
+        console.log(dish);
+    </script>
+</body>
+
+</html>
