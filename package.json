@@ -1,0 +1,16 @@
+{
+  "name": "node-react-sandbox",
+  "version": "1.0.0",
+  "description": "A minimal Node.js + Express server for experimenting with React concepts.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": ["node", "express", "react", "learning"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
