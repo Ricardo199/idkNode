@@ -1,50 +1,47 @@
 # node-react-sandbox
 
-A minimal Node.js + Express server for experimenting with React concepts using `React.createElement`.
+Minimal Node.js + Express sandbox that serves static HTML pages demonstrating basic React usage.
 
-## Prerequisites
+## Requirements
 
-- [Node.js](https://nodejs.org/) v18 or later
+- [Node.js](https://nodejs.org/) 18+
 
-## Getting Started
+## Run
 
 ```bash
-# Install dependencies
 npm install
-
-# Start the server
 npm start
 ```
 
-The server listens on **http://localhost:3000** by default.  
-Set the `PORT` environment variable to use a different port.
+Server default: `http://localhost:3000`  
+Set `PORT` to override.
 
-### Development (auto-restart on file changes)
+## Development
 
 ```bash
 npm run dev
 ```
 
-## Pages
+## Routes
 
-| Route | Description |
-|-------|-------------|
-| `/` | React hello-world — renders an `<h1>` via `React.createElement` |
-| `/recipe` | Baked Salmon recipe page with `React.createElement` example |
+| Route | Purpose |
+|---|---|
+| `/` | Basic React hello-world page (`public/index.html`) |
+| `/recipe` | Baked salmon recipe example (`public/recipe.html`) |
 
-## Project Structure
+## Structure
 
+```text
+public/
+  index.html
+  recipe.html
+src/
+  server.js
+package.json
+README.md
 ```
-.
-├── public/          # Static files served by Express
-│   ├── index.html   # React hello-world example
-│   └── recipe.html  # Baked Salmon recipe example
-├── src/
-│   └── server.js    # Express entry point
-├── package.json
-└── README.md
-```
 
-## License
+## Notes
 
-[MIT](LICENSE)
+- No lint/build/test scripts are currently defined in `package.json`.
+- License in `package.json`: MIT.
